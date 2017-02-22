@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: otcnodered
+  host: otcnodered
+  disk_quota: 1024M
+  services:
+  - otcnodered-cloudantNoSQLDB
+  - availability-monitoring-auto
+  env:
+    NODE_RED_USERNAME: maximo
+    NODE_RED_PASSWORD: M@ximo
